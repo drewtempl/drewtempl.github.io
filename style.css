@@ -44,7 +44,8 @@ body {
 }
 
 .intro {
-    height: 400px;
+    min-height: 400px;
+    width: auto;
     background: rgb(54, 54, 61);
     padding: 50px;
     display: flex;
@@ -52,12 +53,22 @@ body {
     color: white;
     text-align: center;
     font-size: 18px;
+    flex: auto;
 }
 
 .intro h2 {
     margin: 0;
     font-size: 40px;
 }
+
+.resume {
+    width: 120px;
+    padding: 10px 20px;
+    align-self: center;
+    font-family: inherit;
+    margin-top: 10px;
+}
+
 
 .intro h3 {
     margin: 100px 0 30px;
@@ -71,7 +82,8 @@ body {
 .contact-wrapper {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    flex-wrap: wrap;
+    gap: 220px;
 }
 
 .email, .linked-in {
@@ -79,14 +91,34 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 60px;
+    white-space: nowrap;
 }
 
+.email div {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.intro a{
+.link {
     text-decoration: none;
     color: orange;
 }
 
-.intro a:hover {
+.link:hover {
     color:grey;
+}
+
+.resume-button {
+    background: rgb(255, 202, 103);
+    width: 120px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    color: black;
+    align-self: center;
+}
+
+.resume-button:hover {
+    background: rgb(150, 118, 59);
 }
