@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.container {
+    background-image: url("images/map.png");
+    height: 834px;
+    width: 1743px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(33, 50px);
+    grid-template-rows: repeat(25, 1fr);
+}
+
+.lump {
+    width: 50px;
+    height: auto;
+    grid-row: 6;
+    grid-column: 23;
+    border: 1px solid white;
+    transition: width 1s;
+}
+
+.expand-img {
+    width: 1000px;
+    grid-row: 7;
+    grid-column: 7;
+}

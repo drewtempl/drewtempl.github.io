@@ -40,7 +40,7 @@ body {
 }
 
 .header h3 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .intro {
@@ -117,6 +117,7 @@ body {
     margin-top: 30px;
     color: black;
     align-self: center;
+    text-decoration: none;
 }
 
 .resume-button:hover {
