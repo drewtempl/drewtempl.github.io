@@ -71,7 +71,11 @@ body {
 
 
 .intro h3 {
-    margin: 100px 0 30px;
+    margin: 50px 0 30px;
+    padding-top: 50px;
+    border-top: 1px solid rgb(119, 119, 119);
+    width: 70%;
+    align-self: center;
 }
 
 .intro img {
@@ -103,6 +107,8 @@ body {
 .link {
     text-decoration: none;
     color: orange;
+    width: min-content;
+    align-self: center;
 }
 
 .link:hover {
@@ -123,3 +129,4 @@ body {
 .resume-button:hover {
     background: rgb(150, 118, 59);
 }
+
