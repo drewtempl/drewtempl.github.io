@@ -1,38 +1,133 @@
-.App {
+
+@font-face {
+  font-family: 'lato';
+  src: local('Lato-Regular'), url('./fonts/Lato-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'lato'
+}
+
+.header {
+  height: 100vh;
+  background-image: url("../public/snow1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 100px;
+}
+
+.header {
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head-wrapper {
+  background: rgba(56, 56, 56, 0.616);
+  align-self: center;
+  padding: 10px 40px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  font-size: 48px;
+  margin-top: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h3 {
+  font-size: 20px;
+}
+
+.intro {
+  min-height: 400px;
+  width: auto;
+  background: rgb(54, 54, 61);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  flex: auto;
+}
+
+.intro h2 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.resume {
+  width: 120px;
+  padding: 10px 20px;
+  align-self: center;
+  font-family: inherit;
+  margin-top: 10px;
+}
+
+
+.intro h3 {
+  margin: 50px 0 30px;
+  padding-top: 50px;
+  border-top: 1px solid rgb(119, 119, 119);
+  width: 70%;
+  align-self: center;
+}
+
+.intro img {
+  width: auto;
+  height: 40px;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 220px;
+}
+
+.email, .linked-in {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  width: 60px;
+  white-space: nowrap;
 }
 
-.App-link {
-  color: #61dafb;
+.email div {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link {
+  text-decoration: none;
+  color: orange;
+  width: min-content;
+  align-self: center;
+}
+
+.link:hover {
+  color:grey;
+}
+
+.resume-button {
+  background: rgb(255, 202, 103);
+  width: 120px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  color: black;
+  align-self: center;
+  text-decoration: none;
+}
+
+.resume-button:hover {
+  background: rgb(150, 118, 59);
 }
